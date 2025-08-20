@@ -10,6 +10,7 @@ echo $num . "\n";
 echo $num / 2;
 
 // Q3 日付操作
+date_default_timezone_set('Asia/Tokyo');
 $date = date('Y年m月d日 H時i分s秒');
 echo '現在時刻は、' . $date . 'です。';
 
@@ -35,7 +36,7 @@ $kanto = ['東京都', '神奈川県', '埼玉県', '栃木県', '千葉県', '�
 echo $kanto[3] . 'と' . $kanto[4] . 'は関東地方の都道府県です。';
 
 // Q7 連想配列-1
-$capital = [
+$capitals = [
     '東京都'   => '新宿区',
     '神奈川県' => '横浜市',
     '千葉県'   => '千葉市',
@@ -50,7 +51,7 @@ foreach ($capitals as $capital) {
 }
 
 // Q8 連想配列-2
-$capital = [
+$capitals = [
     '東京都'   => '新宿区',
     '神奈川県' => '横浜市',
     '千葉県'   => '千葉市',
@@ -63,7 +64,7 @@ if (isset($capitals['埼玉県'])) { //isset=そのキーが存在していてnu
     echo '埼玉県の県庁所在地は、' . $capitals['埼玉県'] . 'です。';
 }
 // Q9 連想配列-3
-$capital = [
+$capitals = [
     '東京都'   => '新宿区',
     '神奈川県' => '横浜市',
     '千葉県'   => '千葉市',
